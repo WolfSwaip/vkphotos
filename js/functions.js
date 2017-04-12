@@ -52,7 +52,8 @@ function getPhotos(owner_id){
 				$('body').css("overflow", "hidden");//Запрещаем прокрутку страницы до окончания загрузки картинок
         $('.refbutton').html("Обновить");
         $('.refbutton').css('padding', '15px 95px 15px 95px');
-        $('#main').css({marginTop: '100%', transition: '1.5s'});//Перемещаем контейнер с картинками за пределы экрана
+        $('#main').css({marginTop: '100%', transition: '1.2s'});//Перемещаем контейнер с картинками за пределы экрана
+				$(".refbutton").attr( "href", "#");//Обезопасим от множественного нажатия
 				//Устанавливаем таймаут
         setTimeout(function () {
           $('#main').empty();//Очищаем контейнер с картинками
@@ -70,9 +71,10 @@ function getPhotos(owner_id){
             cur_block.append('<div><img src="./images/repost.png"><p>'+c_reposts+'</p></div>')
             cur_block.append('<div><p>Комментарии: '+c_comments+'</p></div>')
           }
-          $('#main').css({marginTop: '30px', transition: '1.5s'});//Поднимаем контейнер вверх
+          $('#main').css({marginTop: '30px', transition: '1.2s'});//Поднимаем контейнер вверх
 					$('body').css("overflow", "scroll");//Разрешаем прокрутку страницы
-        }, 1500);
+					$(".refbutton").attr( "href", "javascript:VK.Auth.login(authorize);");
+        }, 1600);
       }
     }
   });
