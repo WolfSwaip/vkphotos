@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ececec;
+}
+
+/*Кнопка получения фотографий*/
+#login{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#login a{
+  padding: 15px;
+  text-decoration: none;
+  background-color: #5A80A7;
+  line-height: 60px;
+  vertical-align: middle;
+  color: #FDFDFD;
+  font-size: 25px;
+  border-radius: 15px;
+  font-family: monospace;
+}
+
+#login a:hover{
+  background-color: #48627c;
+}
+
+/*Блок с фотографией*/
+.block{
+  width: 570px;
+  min-height: 100px;
+  background-color: #fff;
+  margin: 20px auto;
+  padding-bottom: 50px;
+}
+
+.block img{
+  width: 550px;
+  margin: 10px;
+}
+
+.block hr{
+  width: 550px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*Блоки с кол-вом лайков, репостов и комментариев*/
+.block div{
+  float: left;
+  width: 60px;
+}
+
+.block div img{
+  width: 20px;
+}
+
+.block div p{
+  width: 20px;
+  float: right;
+  margin-top: 12px;
+  color: #1673d2;
+  font-weight: bold;
+}
+
+.block div:last-child{
+  float: right;
+  width: 200px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.block div:last-child p{
+  width: 200px;
+}
+
+/*Кнопка прокрутки страницы вверх*/
+#scrollToTop{
+  display: none;
+  position: fixed;
+  width: 80px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #838383;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#scrollToTop:hover{
+  background-color: #afafaf;
+}
